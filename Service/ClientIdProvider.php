@@ -50,7 +50,7 @@ class ClientIdProvider
      */
     protected function getClientIdFormCookie()
     {
-        if (null === $request = $this->requestStack->getMasterRequest()) {
+        if (null === $request = $this->requestStack->getMainRequest()) {
             return false;
         }
 
